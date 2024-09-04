@@ -17,8 +17,24 @@
         })
         .then(response => response.json())
         .then(data => {
-            const images = data.filter(item => item.type === 'file' && /\.(jpg|jpeg|png|gif)$/.test(item.name));
-            const randomIndex = Math.floor(Math.random() * images.length);
+            if (!Array.isArray(data)) {
+    throw new Error('Data must be an array');
+  }
+
+  const images = data.filter(item =>
+    item.type === 'file' && /\.(jpg|jpeg|png|gif)$/.test(item.name)
+  );
+
+  if (!images.length) {
+    console.warn('No images found in the data');
+    return; // Or handle the case where no images are found
+  }
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const randomImage = images[randomIndex];
+
+  // Process the randomImage here (e.g., display, download, etc.)
+});
             const randomImage = images[randomIndex];
             imageElement.src = randomImage.download_url;
         })
