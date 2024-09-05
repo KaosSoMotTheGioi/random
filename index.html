@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        window.onload = function() {
+            const links = [
+                'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/03.gif?raw=true',
+'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/cs.gif?raw=true',
+'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/image1.gif?raw=true',
+'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/image2.gif?raw=true',
+'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/image3.gif?raw=true',
+'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/nkmy_02.gif?raw=true',
+'https://github.com/KaosSoMotTheGioi/Image-host/blob/main/IMG/pp_arknights240730.gif?raw=true',
+                
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            window.location.href = randomLink;
+        };
+    </script>
+</html>
