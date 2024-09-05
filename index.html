@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Link Redirect</title>
+    <script>
+        window.onload = function() {
+            const links = [
+                'https://raw.githubusercontent.com/KaosSoMotTheGioi/Image/main/cs.gif',
+                'https://raw.githubusercontent.com/KaosSoMotTheGioi/Image/main/Ros.gif',
+                'https://raw.githubusercontent.com/KaosSoMotTheGioi/Image/main/e66ab1b074c30083a8442354f7755f55.gif',
+'https://cdn.discordapp.com/attachments/630553822036623370/1267860299810214069/pp_arknights240730.gif?ex=66da712b&is=66d91fab&hm=e8ad856c90a1985baa788c24df6b451e5df5eb88b84f4a60c1d6aa80548f56d5&',
+'https://cdn.discordapp.com/attachments/630553822036623370/1265521447154221097/nkmy_02.gif?ex=66d9d7f1&is=66d88671&hm=4392f6ba081f9882b38653c6e4005b662d14d2ee6ff64dfbe92a7a0fc2d6eeba&',
+'https://cdn.discordapp.com/attachments/630553822036623370/1265521446445125694/kl_01.gif?ex=66d9d7f1&is=66d88671&hm=6e6e1a54589e63e87f73c0020dd17617834866a81cd1954eb1f6e9946777a2be&',
+'https://cdn.discordapp.com/attachments/630553822036623370/1252871937101791314/bd03.gif?ex=66d9f7ab&is=66d8a62b&hm=73b9a473c45d1acca35ea5aec9d2dbf74326230adafb361e7d28e81d24637a55&', 
+'https://cdn.discordapp.com/attachments/630553822036623370/1251948801573519512/gdgrw_arknights240616.gif?ex=66d9e7ae&is=66d8962e&hm=6b9e3d81028fe98c44dbc13656db18e7dd3ad3accaa69dc0ea7be4f0b046debf&',
+'https://cdn.discordapp.com/attachments/630553822036623370/1227182534127911012/mjabj_2.gif?ex=66da1d0c&is=66d8cb8c&hm=50ebddd1ccc44265b2f0f525262d81bc18f5a4bdf0a75001d610d8f4748918e1&',
+'https://cdn.discordapp.com/attachments/630553822036623370/1212647512247238666/03.gif?ex=66d9f840&is=66d8a6c0&hm=b1a89b20001da3a1e557d50ae838038af07222c685eaa979af037238d9f8048e&', 
+'https://cdn.discordapp.com/attachments/630553822036623370/1205547137589452820/wa_gf240209.gif?ex=66d9d8c3&is=66d88743&hm=8e569c219d253c5e7ee7bb13e3f53f3ddc2e6998266baa855279a526e2c50c4d&',
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            window.location.href = randomLink;
+        };
+    </script>
+</head>
+</html>
